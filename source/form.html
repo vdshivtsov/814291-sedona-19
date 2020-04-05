@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона. Обратная связь</title>
   </head>
   <body>
@@ -23,8 +24,8 @@
         </ul>
         <button class="header__burger-button">Меню</button>
       </nav>
-      <a class="header-logo-link" href="index.html">
-        <img class="header__logo" src="https://via.placeholder.com/102x83" alt="Логотип города Седона" width="102" height="83">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo-image" src="https://via.placeholder.com/102x83" alt="Логотип города Седона" width="102" height="83">
       </a>
       <section class="header__content promo-block">
         <h2 class="promo-block__title visually-hidden">Прекрасная Седона</h2>
@@ -42,26 +43,26 @@
             <legend class="feedback__name-legend">Представьтесь:</legend>
             <label class="feedback__firstname-label">
               Имя:
-              <input type="text" class="feedback__firstname-input" name="firstname" placeholder="Петр">
+              <input class="feedback__firstname-input" type="text" name="firstname" placeholder="Петр">
             </label>
             <label class="feedback__lastname-label" >
               Фамилия:
-              <input type="text" class="feedback__lastname-input" name="lastname" placeholder="Иванов">
+              <input class="feedback__lastname-input" type="text"  name="lastname" placeholder="Иванов">
             </label>
             <label class="feedback__patronymic-label">
               Отчество:
-              <input type="text" class="feedback__patronymic-input" name="patronymic" placeholder="Александрович">
+              <input class="feedback__patronymic-input" type="text"  name="patronymic" placeholder="Александрович">
             </label>
           </fieldset>
           <fieldset class="feedback__contacts-set">
             <legend class="feedback__contacts-legend">Контактная информация:</legend>
             <label class="feedback__phone-label">
               Контактный телефон*:
-              <input type="tel" class="feedback__phone-input" name="phone" placeholder="Введите телефон" required>
+              <input class="feedback__phone-input" type="tel"  name="phone" placeholder="Введите телефон" required>
             </label>
             <label class="feedback__email-label" >
               Электронная почта*:
-              <input type="email" class="feedback__email-input" name="email" placeholder="Введите e-mail" required>
+              <input class="feedback__email-input" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </fieldset>
           <fieldset class="feedback__impress-set">
@@ -102,7 +103,7 @@
             <legend class="feedback__emotions-legend">Опишите свои эмоции:</legend>
             <textarea class="feedback__emotions-textarea" name="emotions" placeholder="Опишите подробно все свои восторги" aria-label="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="feedback__submit-button" type="submit">Отправить отзыв</button>
+          <button class="feedback__submit-button button" type="submit">Отправить отзыв</button>
         </form>
       </section>
       <!-- конец красной зоны -->
