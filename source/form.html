@@ -23,7 +23,9 @@
         </ul>
         <button class="header__burger-button">Меню</button>
       </nav>
-      <img class="header__logo" src="https://via.placeholder.com/102x83" alt="Логотип города Седона" width="102" height="83">
+      <a class="header-logo-link" href="index.html">
+        <img class="header__logo" src="https://via.placeholder.com/102x83" alt="Логотип города Седона" width="102" height="83">
+      </a>
       <section class="header__content promo-block">
         <h2 class="promo-block__title visually-hidden">Прекрасная Седона</h2>
         <img class="promo-block__text-image" src="https://via.placeholder.com/229x39" alt="Текст: Седона" width="229" height="39">
@@ -32,28 +34,98 @@
     <main class="main">
       <h1 class="main__title visually-hidden">Обратная связь о Седоне</h1>
       <!-- красная зона -->
-
+      <section class="main__write-us feedback">
+        <h2 class="feedback__title">Оставьте свой отзыв</h2>
+        <p class="feedback__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="feedback__name-set">
+            <legend class="feedback__name-legend">Представьтесь:</legend>
+            <label class="feedback__firstname-label">
+              Имя:
+              <input type="text" class="feedback__firstname-input" name="firstname" placeholder="Петр">
+            </label>
+            <label class="feedback__lastname-label" >
+              Фамилия:
+              <input type="text" class="feedback__lastname-input" name="lastname" placeholder="Иванов">
+            </label>
+            <label class="feedback__patronymic-label">
+              Отчество:
+              <input type="text" class="feedback__patronymic-input" name="patronymic" placeholder="Александрович">
+            </label>
+          </fieldset>
+          <fieldset class="feedback__contacts-set">
+            <legend class="feedback__contacts-legend">Контактная информация:</legend>
+            <label class="feedback__phone-label">
+              Контактный телефон*:
+              <input type="tel" class="feedback__phone-input" name="phone" placeholder="Введите телефон" required>
+            </label>
+            <label class="feedback__email-label" >
+              Электронная почта*:
+              <input type="email" class="feedback__email-input" name="email" placeholder="Введите e-mail" required>
+            </label>
+          </fieldset>
+          <fieldset class="feedback__impress-set">
+            <legend class="feedback__impress-legend">Ваше общее впечатление:</legend>
+            <label class="feedback__positive-label">
+              <input class="feedback__positive-radio" type="radio" name="impress" value="positive" checked>
+              Скорее положительное
+            </label>
+            <label class="feedback__negative-label" >
+              <input class="feedback__negative-radio" type="radio" name="impress" value="negative">
+              Скорее отрицательное
+            </label>
+            <label class="feedback__dontknow-label" >
+              <input class="feedback__dontknow-radio" type="radio" name="impress" value="don't know">
+              Затрудняюсь ответить
+            </label>
+          </fieldset>
+          <fieldset class="feedback__attractions-set">
+            <legend class="feedback__attractions-legend">Посещенные достопримечательности:</legend>
+            <label class="feedback__bridge-label">
+              <input class="feedback__bridge-checkbox" type="checkbox" name="attractions" value="Devil's Bridge" checked>
+              Мост Дьявола
+            </label>
+            <label class="feedback__mount-label">
+              <input class="feedback__mount-checkbox" type="checkbox" name="attractions" value="Mount Bell" checked>
+              Гора-Колокол
+            </label>
+            <label class="feedback__park-label">
+              <input class="feedback__park-checkbox" type="checkbox" name="attractions" value="Slide Park" checked>
+              Слайд-парк
+            </label>
+            <label class="feedback__rocks-label">
+              <input class="feedback__rocks-checkbox" type="checkbox" name="attractions" value="Red Rocks">
+              Красные скалы
+            </label>
+          </fieldset>
+          <fieldset class="feedback__emotions-set">
+            <legend class="feedback__emotions-legend">Опишите свои эмоции:</legend>
+            <textarea class="feedback__emotions-textarea" name="emotions" placeholder="Опишите подробно все свои восторги" aria-label="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="feedback__submit-button" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
       <!-- конец красной зоны -->
     </main>
     <footer class="footer">
-        <h2 class="footer__title visually-hidden">Контактная информация</h2>
-        <p class="footer__hashtag">#visitsedona</p>
-        <ul class="footer__socials socials-bar">
-          <li class="socials-bar__item">
-            <a href="#" class="socials-bar__link">Twitter</a>
-          </li>
-          <li class="socials-bar__item">
-            <a href="#" class="socials-bar__link">Facebook</a>
-          </li>
-          <li class="socials-bar__item">
-            <a href="#" class="socials-bar__link">Youtube</a>
-          </li>
-        </ul>
-        <div class="footer__develop develop-block">
-          <p class="develop-block__text">
-            Разработано <a class="develop-block__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
-          </p>
-        </div>
-      </footer>
+      <h2 class="footer__title visually-hidden">Контактная информация</h2>
+      <p class="footer__hashtag">#visitsedona</p>
+      <ul class="footer__socials socials-bar">
+        <li class="socials-bar__item">
+          <a href="#" class="socials-bar__link">Twitter</a>
+        </li>
+        <li class="socials-bar__item">
+          <a href="#" class="socials-bar__link">Facebook</a>
+        </li>
+        <li class="socials-bar__item">
+          <a href="#" class="socials-bar__link">Youtube</a>
+        </li>
+      </ul>
+      <div class="footer__develop develop-block">
+        <p class="develop-block__content">
+          Разработано <a class="develop-block__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
