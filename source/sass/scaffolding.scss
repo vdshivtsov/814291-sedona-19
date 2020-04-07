@@ -1,9 +1,24 @@
-.visually-hidden:not(:focus):not(:active) { 
-    position: absolute !important;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
+/**** sourse from https://a11yproject.com/posts/how-to-hide-content ****/
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* added line */
+}
+
+body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $main-font;
+  color: $main-color-text;
+  background-color: rgba(255, 255, 255, 1);
 }

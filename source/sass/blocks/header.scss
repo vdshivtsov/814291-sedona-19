@@ -1,0 +1,13 @@
+.header {
+  background-color: rgba(255, 255, 255, 1);
+  color: $invert-color-text;
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header__navigation-list {
+  @include reset-list;
+}
