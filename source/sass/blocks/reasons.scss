@@ -1,0 +1,20 @@
+.reasons {
+  padding-top: 43px;
+}
+
+.reasons__intro {
+  @include reset;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.reasons__content {
+  @include reset;
+  line-height: 26px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.reasons__list {
+  @include reset-list;
+}
