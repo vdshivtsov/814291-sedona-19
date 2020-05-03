@@ -1,0 +1,48 @@
+.reason {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: rgba(239, 239, 239, 1);
+}
+
+.reason::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 280px;
+  height: 1px;
+  left: calc(50% - 140px);
+  bottom: 0;
+}
+
+.reason:nth-child(1),
+.reason:nth-child(2) {
+  color: $invert-color-text;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.reason:nth-child(1)::after,
+.reason:nth-child(2)::after,
+.reason:last-child::after {
+  display: none;
+}
+
+.reason__why {
+  @include reset;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.reason__number {
+  @include reset;
+}
+
+.reason__epithet {
+  @include reset;
+  color: $gray-color-text;
+}
+
+.reason__advantages-list {
+  @include reset-list;
+}

@@ -1,0 +1,13 @@
+.interest__question {
+  @include reset;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.interest__content {
+  @include reset;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray-color-text;
+}

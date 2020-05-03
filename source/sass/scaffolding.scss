@@ -47,3 +47,20 @@ a {
   padding-left: $mobile-container-padding;
   padding-right: $mobile-container-padding;
 }
+
+.container--blue {
+  background-color: $light-grey-blue;
+}
+
+.button {
+  display: block;
+  background-color: $light-grey-blue;
+  height: 58px;
+  width: 100%;
+  color: $invert-color-text;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 17px;
+}
