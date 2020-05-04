@@ -2,6 +2,7 @@
   position: relative;
   font-size: 14px;
   line-height: 21px;
+  color: $gray-color-text;
   background-color: rgba(239, 239, 239, 1);
 }
 
@@ -27,20 +28,42 @@
   display: none;
 }
 
+.reason .container {
+  padding-top: 21px;
+  padding-bottom: 28px;
+}
+
+.reason:nth-child(1) .container {
+  padding-top: 43px;
+  padding-bottom: 45px;
+}
+
+.reason:nth-child(2) .container {
+  padding-top: 39px;
+  padding-bottom: 45px;
+}
+
 .reason__why {
   @include reset;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  color: $main-color-text;
+  margin-bottom: 9px;
+}
+
+.reason:nth-child(1) .reason__why,
+.reason:nth-child(2) .reason__why {
+  color: $invert-color-text;
 }
 
 .reason__number {
   @include reset;
+  margin-bottom: 15px;
 }
 
 .reason__epithet {
   @include reset;
-  color: $gray-color-text;
 }
 
 .reason__advantages-list {

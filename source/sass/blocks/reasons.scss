@@ -1,5 +1,5 @@
 .reasons {
-  padding-top: 43px;
+  padding-top: 40px;
 }
 
 .reasons__intro {
@@ -7,6 +7,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  margin-bottom: 27px;
 }
 
 .reasons__content {
@@ -17,4 +18,8 @@
 
 .reasons__list {
   @include reset-list;
+}
+
+.reasons > .container {
+  padding-bottom: 27px;
 }
