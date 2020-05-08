@@ -1,0 +1,13 @@
+.photo-section {
+
+}
+
+.photo-section__content {
+  line-height: 24px;
+  color: $gray-color-text;
+  margin-bottom: 56px;
+}
+
+.photo-section__list {
+  @include reset-list;
+}

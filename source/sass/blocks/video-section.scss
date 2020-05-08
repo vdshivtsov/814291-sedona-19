@@ -1,0 +1,15 @@
+.video-section__question {
+  @include reset;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.video-section__content {
+  @include reset;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray-color-text;
+  margin-bottom: 40px;
+}
