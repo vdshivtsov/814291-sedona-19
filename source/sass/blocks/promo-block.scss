@@ -1,8 +1,17 @@
+// .promo-block {
+//   background-image: url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
+//   background-repeat: no-repeat, no-repeat;
+//   background-size: contain, cover;
+//   background-position: bottom, top;
+//   min-height: 389px;
+//   padding: 90px;
+// }
+
 .promo-block {
-  background-image: url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
-  background-position: bottom, top;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   min-height: 389px;
   padding: 90px;
 }

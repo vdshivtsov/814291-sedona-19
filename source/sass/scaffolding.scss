@@ -52,8 +52,15 @@ a {
   background-color: $light-grey-blue;
 }
 
+.container--border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $light-grey-blue;
   height: 58px;
   width: 100%;
@@ -61,18 +68,32 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
-  padding-top: 17px;
+  text-transform: uppercase;
+  border: none;
 }
 
-// .triangle::after {
-//   content: "";
-//   position: absolute;
-//   bottom: -10px;
-//   width: 100%;
-//   height: auto;
-//   background-image: url("../img/bg-intro-triangle-mobile.svg");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-position: center;
-// }
+.triangle {
+  position: relative;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 26px;
+  background-position: center;
+}
+
+.triangle--bottom::after {
+  bottom: 0;
+  height: 26px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+}
+
+.triangle--top::after {
+  top: -6px;
+  height: 37px;
+  background-image: url("../img/bg-triangle.svg");
+}

@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
 .advantages__item::before {
   content: "";
   position: absolute;
