@@ -1,21 +1,18 @@
-// .promo-block {
-//   background-image: url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
-//   background-repeat: no-repeat, no-repeat;
-//   background-size: contain, cover;
-//   background-position: bottom, top;
-//   min-height: 389px;
-//   padding: 90px;
-// }
-
 .promo-block {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   min-height: 389px;
-  padding: 90px;
+  padding-top: 90px;
 }
 
 .promo-block--photo {
   min-height: 195px;
+}
+
+.promo-block__image {
+  min-width: 281px;
+  margin-left: auto;
+  margin-right: auto;
 }

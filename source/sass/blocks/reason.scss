@@ -28,19 +28,19 @@
   display: none;
 }
 
-.reason .container {
-  padding-top: 21px;
-  padding-bottom: 28px;
+.reason > .container {
+  padding-top: 23px;
+  padding-bottom: 30px;
 }
 
-.reason:nth-child(1) .container {
-  padding-top: 43px;
-  padding-bottom: 45px;
+.reason:nth-child(1) > .container {
+  padding-top: 65px;
+  padding-bottom: 40px;
 }
 
-.reason:nth-child(2) .container {
+.reason:nth-child(2) > .container {
   padding-top: 39px;
-  padding-bottom: 45px;
+  padding-bottom: 39px;
 }
 
 .reason__why {

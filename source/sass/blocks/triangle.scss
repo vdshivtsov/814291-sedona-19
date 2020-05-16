@@ -1,0 +1,25 @@
+.triangle {
+  position: relative;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 26px;
+  background-position: center;
+}
+
+.triangle--bottom::after {
+  bottom: 0;
+  height: 26px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+}
+
+.triangle--top::after {
+  top: -6px;
+  height: 37px;
+  background-image: url("../img/bg-triangle.svg");
+}
