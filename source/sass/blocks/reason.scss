@@ -28,17 +28,17 @@
   display: none;
 }
 
-.reason > .container {
+.reason__container {
   padding-top: 23px;
   padding-bottom: 30px;
 }
 
-.reason:nth-child(1) > .container {
+.reason__container--first {
   padding-top: 65px;
   padding-bottom: 40px;
 }
 
-.reason:nth-child(2) > .container {
+.reason__container--second {
   padding-top: 39px;
   padding-bottom: 39px;
 }
@@ -52,8 +52,7 @@
   margin-bottom: 9px;
 }
 
-.reason:nth-child(1) .reason__why,
-.reason:nth-child(2) .reason__why {
+.reason__why--invert-color {
   color: $invert-color-text;
 }
 
