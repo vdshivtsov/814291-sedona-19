@@ -36,7 +36,7 @@
         <img class="promo-block__text-image" src="img/text-sedona.svg" alt="Текст: Седона" width="229" height="39">
       </section>
     </header>
-    <main class="main">
+    <main class="main main--form">
       <h1 class="main__title visually-hidden">Обратная связь о Седоне</h1>
       <!-- красная зона -->
       <section class="main__write-us feedback">
@@ -49,11 +49,11 @@
             <fieldset class="feedback__set feedback__set--name">
                 <legend class="feedback__legend feedback__legend--name">Представьтесь:</legend>
                 <label class="feedback__label feedback__label--firstname">
-                  <span class="feedback__span feedback__span--firstname">Имя:</span>
+                  <span class="feedback__span feedback__span--firstname">Имя*:</span>
                   <input class="feedback__input feedback__input--firstname" type="text" name="firstname" placeholder="Петр">
                 </label>
                 <label class="feedback__label feedback__label--lastname" >
-                  <span class="feedback__span feedback__span--lastname">Фамилия:</span>
+                  <span class="feedback__span feedback__span--lastname">Фамилия*:</span>
                   <input class="feedback__input feedback__input--lastname" type="text"  name="lastname" placeholder="Иванов">
                 </label>
                 <label class="feedback__label feedback__label--patronymic">
@@ -78,17 +78,17 @@
           <div class="container container--border-bottom">
             <fieldset class="feedback__set feedback__set--impress">
               <legend class="feedback__legend feedback__legend--impress">Ваше общее впечатление:</legend>
-              <label class="feedback__label feedback__label--positive">
+              <label class="feedback__label feedback__label--radio-checkbox feedback__label--positive">
                 <input class="feedback__input feedback__input--radio feedback__input--positive" type="radio" name="impress" value="positive" checked>
                 <div class="feedback__input-custom feedback__input-custom--radio"></div>
                 <span class="feedback__span feedback__span--radio-checkbox feedback__span--positive">Скорее положительное</span>
               </label>
-              <label class="feedback__label feedback__label--negative" >
+              <label class="feedback__label feedback__label--radio-checkbox feedback__label--negative" >
                 <input class="feedback__input feedback__input--radio feedback__input--negative" type="radio" name="impress" value="negative">
                 <div class="feedback__input-custom feedback__input-custom--radio"></div>
                 <span class="feedback__span feedback__span--radio-checkbox feedback__span--negative">Скорее отрицательное</span>
               </label>
-              <label class="feedback__label feedback__label--dontknow" >
+              <label class="feedback__label feedback__label--radio-checkbox feedback__label--dontknow" >
                 <input class="feedback__input feedback__input--radio feedback__input--dontknow" type="radio" name="impress" value="dontknow">
                 <div class="feedback__input-custom feedback__input-custom--radio"></div>
                 <span class="feedback__span feedback__span--radio-checkbox feedback__span--dontknow">Затрудняюсь ответить</span>
@@ -98,22 +98,22 @@
           <div class="container container--border-bottom">
             <fieldset class="feedback__set feedback__set--attractions">
               <legend class="feedback__legend feedback__legend--attractions">Посещенные достопримечательности:</legend>
-              <label class="feedback__label feedback__label--bridge">
+              <label class="feedback__label feedback__label--attractions feedback__label--bridge">
                 <input class="feedback__input feedback__input--checkbox feedback__input--bridge" type="checkbox" name="attractions" value="Devil's Bridge" checked>
                 <div class="feedback__input-custom feedback__input-custom--checkbox"></div>
                 <span class="feedback__span feedback__span--radio-checkbox feedback__span--bridge">Мост Дьявола</span>
               </label>
-              <label class="feedback__label feedback__label--mount">
+              <label class="feedback__label feedback__label--attractions feedback__label--mount">
                 <input class="feedback__input feedback__input--checkbox feedback__input--mount" type="checkbox" name="attractions" value="Mount Bell" checked>
                 <div class="feedback__input-custom feedback__input-custom--checkbox"></div>
                 <span class="feedback__span feedback__span--radio-checkbox feedback__span--mount">Гора-Колокол</span>
               </label>
-              <label class="feedback__label feedback__label--park">
+              <label class="feedback__label feedback__label--attractions feedback__label--park">
                 <input class="feedback__input feedback__input--checkbox feedback__input--park" type="checkbox" name="attractions" value="Slide Park" checked>
                 <div class="feedback__input-custom feedback__input-custom--checkbox"></div>
                 <span class="feedback__span feedback__span--radio-checkbox feedback__span--park">Слайд-парк</span>
               </label>
-              <label class="feedback__label feedback__label--rocks">
+              <label class="feedback__label feedback__label--attractions feedback__label--rocks">
                 <input class="feedback__input feedback__input--checkbox feedback__input--rocks" type="checkbox" name="attractions" value="Red Rocks">
                 <div class="feedback__input-custom feedback__input-custom--checkbox"></div>
                 <span class="feedback__span feedback__span--radio-checkbox feedback__span--rocks">Красные скалы</span>

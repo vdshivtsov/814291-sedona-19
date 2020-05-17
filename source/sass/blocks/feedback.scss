@@ -3,7 +3,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .feedback__content {
@@ -11,6 +11,7 @@
   font-size: 14px;
   line-height: 24px;
   color: $gray-color-text;
+  margin-bottom: 17px;
 }
 
 .feedback__set {
@@ -19,12 +20,41 @@
   display: flex;
 }
 
+.feedback__set--name {
+  margin-bottom: 26px;
+}
+
+.feedback__set--contacts {
+  margin-bottom: 28px;
+}
+
+.feedback__set--attractions {
+  margin-bottom: 25px;
+}
+
 .feedback__legend {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 18px;
+}
+
+.feedback__legend--contacts {
+  margin-bottom: 17px;
+}
+
+.feedback__legend--impress {
+  margin-bottom: 23px;
+  padding-top: 18px;
+}
+
+.feedback__legend--attractions {
+  margin-bottom: 17px;
+}
+
+.feedback__set--impress {
+  margin-bottom: 27px;
 }
 
 .feedback__label {
@@ -34,6 +64,18 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.feedback__label--attractions {
+  margin-bottom: 24px;
+}
+
+.feedback__label:last-child {
+  margin-bottom: 0;
+}
+
+.feedback__label--radio-checkbox {
+  margin-bottom: 13px;
 }
 
 .feedback__input {
@@ -47,6 +89,7 @@
   padding: 0 22px 0;
   flex-grow: 1;
   margin-left: 15px;
+  width: 100%;
 }
 
 .feedback__input::placeholder {
@@ -60,6 +103,10 @@
   text-align: left;
 }
 
+.feedback__label--phone {
+  margin-bottom: 9px;
+}
+
 .feedback__input--phone,
 .feedback__input--email {
   margin-left: 0;
@@ -70,11 +117,13 @@
   line-height: 26px;
   color: $gray-color-text;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-top: 3px;
+  margin-left: 1px;
 }
 
 .feedback__span--contacts {
   padding-left: 20px;
+  margin-bottom: 7px;
 }
 
 .feedback__span--radio-checkbox {
@@ -83,6 +132,7 @@
   font-size: 18px;
   color: $main-color-text;
   font-weight: 700;
+  text-transform: none;
 }
 
 .feedback__input--radio {
@@ -91,8 +141,8 @@
 
 .feedback__input-custom {
   position: relative;
-  width: 51px;
-  height: 51px;
+  width: 56px;
+  height: 56px;
   background-color: #f2f2f2;
   display: inline-block;
   border: 5px solid #f2f2f2;
@@ -100,7 +150,7 @@
 
 .feedback__input-custom--radio {
   border-radius: 50%;
-  margin-right: 22px;
+  margin-right: 23px;
 }
 
 .feedback__input--radio:checked ~ .feedback__input-custom::after {
@@ -121,7 +171,7 @@
 
 .feedback__input-custom--checkbox {
   border-radius: 3px;
-  margin-right: 22px;
+  margin-right: 23px;
 }
 
 .feedback__input--checkbox:checked ~ .feedback__input-custom::after {
@@ -145,11 +195,11 @@
   line-height: 26px;
   font-weight: 700;
   color: $main-color-text;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-right: 30px;
   padding-left: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 50px;
+  padding-bottom: 12px;
+  margin-bottom: 48px;
 }
 
 .feedback__textarea::placeholder {

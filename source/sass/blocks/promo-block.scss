@@ -1,14 +1,15 @@
 .promo-block {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: top;
   min-height: 389px;
   padding-top: 90px;
 }
 
 .promo-block--photo {
-  min-height: 195px;
+  min-height: 157px;
+  background-position: bottom;
+  padding-top: 50px;
 }
 
 .promo-block__image {
