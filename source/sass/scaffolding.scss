@@ -43,7 +43,17 @@ a {
 }
 
 .container {
-  padding: 0;
+  @include reset;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container--stretching {
+  max-width: 100%;
+}
+
+.container--padding {
   padding-left: $mobile-container-padding;
   padding-right: $mobile-container-padding;
 }
