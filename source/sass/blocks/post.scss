@@ -4,6 +4,7 @@
 
 .post__image {
   margin-bottom: 9px;
+  height: auto;
 }
 
 .post__title {
@@ -25,6 +26,7 @@
 
 .post__likes-counter {
   @include reset;
+  position: relative;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
@@ -36,7 +38,7 @@
 .post__likes-counter::before {
   content: "";
   position: absolute;
-  left: 21px;
+  left: -37px;
   background-image: url("../../img/icon-like.svg");
   background-repeat: no-repeat;
   width: 23px;
