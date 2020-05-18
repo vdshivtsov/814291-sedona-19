@@ -1,0 +1,57 @@
+.header {
+  background-color: rgba(255, 255, 255, 1);
+  color: $invert-color-text;
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header__navigation {
+  position: relative;
+  z-index: 1;
+}
+
+.header__navigation-list {
+  @include reset-list;
+}
+
+.header__close-button {
+  @include reset;
+  width: 23px;
+  height: 22px;
+  background-color: transparent;
+  border-style: none;
+  background-image: url("../../img/icon-cross.svg");
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header__burger-container {
+  height: 56px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.header__burger-button {
+  @include reset;
+  width: 23px;
+  height: 22px;
+  background-color: transparent;
+  border-style: none;
+  background-image: url("../../img/icon-menu.svg");
+  cursor: pointer;
+}
+
+.header__logo-link {
+  display: block;
+  position: absolute;
+  bottom: -28px;
+  left: calc(50% - 51px);
+  width: 102px;
+  height: 84px;
+}
+

@@ -1,0 +1,58 @@
+.advantages {
+  color: $main-color-text;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 36px;
+}
+
+.advantages__item {
+  margin-bottom: 31px;
+  position: relative;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages__item--house::before {
+  width: 37px;
+  height: 36px;
+  background-image: url("../../img/icon-house.svg");
+  left: 22px;
+  top: -10px;
+}
+
+.advantages__item--gift::before {
+  width: 32px;
+  height: 38px;
+  background-image: url("../../img/icon-gift.svg");
+  left: 25px;
+  top: -14px;
+}
+
+.advantages__item--burger::before {
+  width: 40px;
+  height: 35px;
+  background-image: url("../../img/icon-burger.svg");
+  left: 18px;
+  top: -8px;
+}
+
+.advantages__title {
+  @include reset;
+  margin-left: 50px;
+  margin-bottom: 17px;
+}
+
+.advantages__content {
+  @include reset;
+  margin-left: 50px;
+  color: $gray-color-text;
+}

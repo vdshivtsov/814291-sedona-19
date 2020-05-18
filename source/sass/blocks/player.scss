@@ -1,0 +1,73 @@
+.player {
+  position: relative;
+}
+
+.player svg {
+  fill: #454545;
+}
+
+.player__video {
+
+}
+
+.player__seek-bar {
+  position: absolute;
+  left: calc(50% - 140px);
+  bottom: 5px;
+  width: 280px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player__scale {
+  width: 235px;
+  height: 3px;
+  position: absolute;
+  left: calc(50% - 117px);
+  top: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.player__toogle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  left: 35px;
+  top: -3px;
+  cursor: pointer;
+}
+
+.player__control-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 23px;
+  position: absolute;
+  left: calc(50% - 140px);
+  bottom: -62px;
+  width: 280px;
+  height: 66px;
+  background-color: rgba(243, 243, 243, 1);
+}
+
+.player__replay {
+  cursor: pointer;
+  width: 16px;
+  height: 20px;
+  margin-right: auto;
+}
+
+.player__subtitles {
+  cursor: pointer;
+  width: 32px;
+  height: 20px;
+}
+
+.player__fullscreen {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 31px;
+}

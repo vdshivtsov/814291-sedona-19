@@ -1,0 +1,21 @@
+.reasons__intro {
+  @include reset;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 27px;
+}
+
+.reasons__content {
+  @include reset;
+  line-height: 26px;
+  color: $gray-color-text;
+}
+
+.reasons__list {
+  @include reset-list;
+}
+
+.reasons__container {
+  padding-bottom: 16px;
+}

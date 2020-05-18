@@ -1,0 +1,44 @@
+.post {
+  padding-top: 22px;
+}
+
+.post__image {
+  margin-bottom: 9px;
+}
+
+.post__title {
+  @include reset;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.post__author {
+  @include reset;
+  color: $gray-color-text;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+  margin-bottom: 8px;
+}
+
+.post__likes-counter {
+  @include reset;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 700;
+  margin-left: 38px;
+  margin-bottom: 17px;
+}
+
+.post__likes-counter::before {
+  content: "";
+  position: absolute;
+  left: 21px;
+  background-image: url("../../img/icon-like.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 21px;
+}

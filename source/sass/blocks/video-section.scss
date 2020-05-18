@@ -1,0 +1,19 @@
+.video-section__container {
+  padding-top: 33px;
+}
+
+.video-section__question {
+  @include reset;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.video-section__content {
+  @include reset;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray-color-text;
+  margin-bottom: 34px;
+}
