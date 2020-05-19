@@ -101,15 +101,38 @@
   flex-direction: column;
   align-items: stretch;
   text-align: left;
+  position: relative;
 }
 
 .feedback__label--phone {
   margin-bottom: 9px;
 }
 
+.feedback__label--phone::after,
+.feedback__label--email::after {
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__label--phone::after {
+  background-image: url("../../img/icon-phone.svg");
+}
+
+.feedback__label--email::after {
+  background-image: url("../../img/icon-mail.svg");
+}
+
 .feedback__input--phone,
 .feedback__input--email {
   margin-left: 0;
+  padding-right: 80px;
 }
 
 .feedback__span {
