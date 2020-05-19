@@ -1,11 +1,36 @@
+.develop-block {
+  width: 141px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.develop-block__content {
+  @include reset;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.develop-block__text {
+  margin-top: 9px;
+}
+
 .develop-block__academy-logo {
-  background-image: url("../../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150%;
   display: inline-block;
-  width: 27px;
-  height: 34px;
   vertical-align: middle;
-  margin-left: 11px;
+  margin-left: 6px;
+}
+
+.develop-block__icon {
+  fill: rgba($color: #000000, $alpha: 1.0);
+  width: 40px;
+}
+
+.develop-block__icon:hover,
+.develop-block__icon:focus {
+  fill: rgba($color: #81b3d2, $alpha: 1.0);
+}
+
+.develop-block__icon:active {
+  fill: rgba($color: #000000, $alpha: 0.3);
 }

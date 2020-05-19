@@ -9,10 +9,6 @@
   height: auto;
 }
 
-.player__svg {
-  fill: #454545;
-}
-
 .player__container--seek {
   position: absolute;
   bottom: 5px;
@@ -62,22 +58,36 @@
   background-color: rgba(243, 243, 243, 1);
 }
 
-.player__replay {
+.player__control-button {
   cursor: pointer;
+}
+
+.player__control-button--replay {
   width: 16px;
   height: 20px;
   margin-right: auto;
 }
 
-.player__subtitles {
-  cursor: pointer;
+.player__control-button--subtitles {
   width: 32px;
   height: 20px;
 }
 
-.player__fullscreen {
-  cursor: pointer;
+.player__control-button--fullscreen {
   width: 20px;
   height: 20px;
   margin-left: 31px;
+}
+
+.player__svg {
+  fill: rgba(92, 104, 112, 1);
+}
+
+.player__control-button:hover > .player__svg,
+.player__control-button:focus > .player__svg{
+  fill: rgba(51, 51, 51, 1);
+}
+
+.player__control-button:active > .player__svg {
+  fill: rgba(51, 51, 51, 0.3);
 }
