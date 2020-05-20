@@ -23,3 +23,19 @@
   height: 37px;
   background-image: url("../img/bg-triangle.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .triangle::after {
+    background-size: 100% 57px;
+  }
+
+  .triangle--bottom::after {
+    bottom: 0;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .triangle--top::after {
+    display: none;
+  }
+}

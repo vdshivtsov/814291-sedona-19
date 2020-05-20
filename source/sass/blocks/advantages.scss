@@ -1,7 +1,7 @@
 .advantages {
   color: $main-color-text;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 36px;
   padding-bottom: 36px;
 }
 
@@ -55,4 +55,54 @@
   @include reset;
   margin-left: 50px;
   color: $gray-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    padding-top: 160px;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .advantages__item {
+    width: 164px;
+    margin: 0;
+  }
+
+  .advantages__item--gift {
+    order: 1;
+  }
+
+  .advantages__item--house::before {
+    width: 75px;
+    height: 72px;
+    left: 45px;
+    top: -101px;
+  }
+
+  .advantages__item--gift::before {
+    width: 64px;
+    height: 75px;
+    left: 50px;
+    top: -104px;
+  }
+
+  .advantages__item--burger::before {
+    width: 77px;
+    height: 68px;
+    left: 44px;
+    top: -98px;
+  }
+
+  .advantages__title {
+    margin: 0;
+    margin-bottom: 19px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .advantages__content {
+    margin: 0;
+  }
 }

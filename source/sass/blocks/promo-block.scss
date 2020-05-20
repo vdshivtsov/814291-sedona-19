@@ -17,3 +17,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .promo-block {
+    min-height: 518px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    padding-top: 77px;
+  }
+
+  .promo-block__image {
+    width: 460px;
+  }
+}

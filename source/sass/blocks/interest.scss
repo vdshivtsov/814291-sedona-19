@@ -21,3 +21,15 @@
 .interest__find-button {
   margin-bottom: 49px;
 }
+
+@media (min-width: $tablet-width) {
+  .interest__question {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .interest__container {
+    padding-left: 155px;
+    padding-right: 155px;
+  }
+}

@@ -19,3 +19,26 @@
 .reasons__container {
   padding-bottom: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .reasons__intro {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .reasons__container {
+    width: 530px;
+    padding-bottom: 50px;
+  }
+
+  .reasons__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .reasons__item:nth-child(1),
+  .reasons__item:nth-child(2) {
+    width: 100%;
+  }
+}

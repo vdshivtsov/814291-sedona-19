@@ -16,3 +16,15 @@
   line-height: 26px;
   margin-bottom: 36px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer__hashtag {
+    margin-bottom: 0;
+  }
+}
