@@ -1,0 +1,66 @@
+.pop-up {
+  background-color: rgba(255, 255, 255, 1);
+  color: $main-color-text;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position: fixed;
+  bottom: 50%;
+  left: 0;
+  transform: translateY(50%);
+  width: 100%;
+  z-index: 10;
+}
+
+.pop-up--wrong {
+  display: none;
+  min-height: 280px;
+  padding-top: 43px;
+}
+
+.pop-up--success {
+  display: none;
+  min-height: 280px;
+  padding-top: 40px;
+}
+
+.pop-up__container--content {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.pop-up__container--close-button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pop-up__title {
+  @include reset;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.pop-up__message {
+  @include reset;
+  color: $gray-color-text;
+  margin-bottom: 23px;
+}
+
+.pop-up__message--success {
+  margin-bottom: 35px;
+}
+
+.pop-up__button {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pop-up__button--success {
+  width: 100%;
+}

@@ -92,6 +92,17 @@
   width: 100%;
 }
 
+.feedback__input:hover,
+.feedback__textarea:hover {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.feedback__input:focus,
+.feedback__textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: solid 4px rgb(229, 229, 229);
+}
+
 .feedback__input::placeholder {
   color: $main-color-text;
 }
@@ -101,15 +112,38 @@
   flex-direction: column;
   align-items: stretch;
   text-align: left;
+  position: relative;
 }
 
 .feedback__label--phone {
   margin-bottom: 9px;
 }
 
+.feedback__label--phone::after,
+.feedback__label--email::after {
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__label--phone::after {
+  background-image: url("../../img/icon-phone.svg");
+}
+
+.feedback__label--email::after {
+  background-image: url("../../img/icon-mail.svg");
+}
+
 .feedback__input--phone,
 .feedback__input--email {
   margin-left: 0;
+  padding-right: 80px;
 }
 
 .feedback__span {
@@ -145,7 +179,19 @@
   height: 56px;
   background-color: #f2f2f2;
   display: inline-block;
-  border: 5px solid #f2f2f2;
+}
+
+.feedback__input-custom:hover,
+.feedback__input-custom:focus {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.feedback__input-custom:active {
+  background-color: rgba(213, 213, 213, 1);
+}
+
+.feedback__input:checked:active ~ .feedback__input-custom::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 .feedback__input-custom--radio {
@@ -162,7 +208,6 @@
   position: absolute;
   left: calc(50% - 10px);
   top: calc(50% - 10px);
-  border: 3px solid $gray-color-text;
 }
 
 .feedback__input--checkbox {
@@ -172,24 +217,31 @@
 .feedback__input-custom--checkbox {
   border-radius: 3px;
   margin-right: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.feedback__input--checkbox:checked ~ .feedback__input-custom::after {
-  content: "";
+.feedback__tick-icon {
+  display: none;
   width: 24px;
   height: 16px;
-  background-color: transparent;
-  background-image: url("../../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: calc(50% - 12px);
-  top: calc(50% - 8px);
+  fill: rgba(0, 0, 0, 1);
+}
+
+.feedback__input--checkbox:checked ~ .feedback__input-custom > .feedback__tick-icon {
+  display: block;
+}
+
+.feedback__input--checkbox:checked:active ~ .feedback__input-custom > .feedback__tick-icon {
+  fill: rgba(51, 51, 51, 0.3);
 }
 
 .feedback__textarea {
   width: 100%;
   height: 160px;
   resize: none;
+  border: none;
   background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
