@@ -44,3 +44,33 @@
   width: 23px;
   height: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .post {
+    padding-top: 0;
+  }
+
+  .post__container {
+    background-clip: content-box;
+    background-color: rgba(234, 234, 234, 1);
+    width: 100%;
+    padding: 0;
+  }
+
+  .post__image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .post__likes-counter {
+    margin: 0;
+  }
+
+  .post__wrapper--description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

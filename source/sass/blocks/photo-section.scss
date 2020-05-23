@@ -10,3 +10,20 @@
 .photo-section__container {
   padding-bottom: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: $tablet-container-padding;
+    padding-right: $tablet-container-padding;
+  }
+
+  .photo-section__item {
+    width: 50%;
+  }
+
+  .photo-section__item:first-child {
+    width: 100%;
+  }
+}

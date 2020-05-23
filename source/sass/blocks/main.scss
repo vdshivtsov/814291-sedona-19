@@ -29,3 +29,10 @@
 .main__videos {
   margin-bottom: 106px;
 }
+
+@media (min-width: $tablet-width) {
+  .main__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}

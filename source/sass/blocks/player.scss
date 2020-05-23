@@ -91,3 +91,37 @@
 .player__control-button:active > .player__svg {
   fill: rgba(51, 51, 51, 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .player__seek-bar {
+    height: 93px;
+    padding-top: 45px;
+    padding-left: 93px;
+    padding-right: 166px;
+  }
+
+  .player__control-bar {
+    background-color: transparent;
+    height: 93px;
+    padding-left: 35px;
+    padding-right: 41px;
+  }
+
+  .player__container--control {
+    height: 66px;
+    bottom: 32px;
+  }
+
+  .player__svg {
+    fill: rgba(255, 255, 255, 1);
+  }
+
+  .player__control-button:hover > .player__svg,
+  .player__control-button:focus > .player__svg{
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .player__control-button:active > .player__svg {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}

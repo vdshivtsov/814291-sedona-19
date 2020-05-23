@@ -79,3 +79,14 @@ a {
 .container--border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: $tablet-width) {
+  .container--padding {
+    padding-left: $tablet-container-padding;
+    padding-right: $tablet-container-padding;
+  }
+
+  .container--border-bottom {
+    border-bottom: none;
+  }
+}

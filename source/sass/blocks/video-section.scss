@@ -17,3 +17,23 @@
   color: $gray-color-text;
   margin-bottom: 34px;
 }
+
+@media (min-width: $tablet-width) {
+  .video-section__question {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .video-section__player-container {
+    padding-left: $tablet-container-padding;
+    padding-right: $tablet-container-padding;
+  }
+
+  .player__container--seek {
+    padding: 0;
+  }
+
+  .player__container--control {
+    padding: 0;
+  }
+}

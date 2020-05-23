@@ -25,7 +25,16 @@
     padding-top: 77px;
   }
 
+  .promo-block--photo {
+    min-height: 290px;
+    padding-top: 94px;
+  }
+
   .promo-block__image {
+    width: 460px;
+  }
+
+  .promo-block__text-image {
     width: 460px;
   }
 }
