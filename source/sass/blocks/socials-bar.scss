@@ -1,13 +1,17 @@
 .socials-bar {
-  @include reset-list;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 37px;
 }
 
 .socials-bar__item {
   @include reset;
+  margin-right: 6px;
+}
+
+.socials-bar__item:nth-child(3) {
+  margin-right: 0;
 }
 
 .socials-bar__link {
@@ -17,7 +21,6 @@
   width: 46px;
   height: 48px;
   background-color: $light-grey-blue;
-  margin-right: 6px;
 }
 
 .socials-bar__link:hover,

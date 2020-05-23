@@ -1,7 +1,5 @@
 .develop-block {
   width: 141px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .develop-block__content {
@@ -33,10 +31,4 @@
 
 .develop-block__icon:active {
   fill: rgba($color: #000000, $alpha: 0.3);
-}
-
-@media (min-width: $tablet-width) {
-  .develop-block {
-    margin-left: 0;
-  }
 }
