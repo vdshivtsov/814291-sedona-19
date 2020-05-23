@@ -46,122 +46,125 @@
             <p class="feedback__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </div>
-        <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
-          <div class="container container--stretching container--border-bottom">
-            <div class="container container--padding">
-              <fieldset class="feedback__set feedback__set--name">
-                  <legend class="feedback__legend feedback__legend--name">Представьтесь:</legend>
-                  <label class="feedback__label feedback__label--firstname">
-                    <span class="feedback__span feedback__span--firstname">Имя*:</span>
-                    <input class="feedback__input feedback__input--firstname" type="text" name="firstname" placeholder="Петр">
+        <div class="feedback__form-wrapper">
+          <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
+            <div class="feedback__outer-container feedback__outer-container--name container container--stretching container--border-bottom">
+              <div class="feedback__inner-container container container--padding">
+                <fieldset class="feedback__set feedback__set--name">
+                    <legend class="feedback__legend feedback__legend--name">Представьтесь:</legend>
+                    <label class="feedback__label feedback__label--firstname">
+                      <span class="feedback__span feedback__span--firstname">Имя*:</span>
+                      <input class="feedback__input feedback__input--firstname" type="text" name="firstname" placeholder="Петр">
+                    </label>
+                    <label class="feedback__label feedback__label--lastname" >
+                      <span class="feedback__span feedback__span--lastname">Фамилия*:</span>
+                      <input class="feedback__input feedback__input--lastname" type="text"  name="lastname" placeholder="Иванов">
+                    </label>
+                    <label class="feedback__label feedback__label--patronymic">
+                      <span class="feedback__span feedback__span--patronymic">Отчество:</span>
+                      <input class="feedback__input feedback__input--patronymic" type="text"  name="patronymic" placeholder="Александрович">
+                    </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="feedback__outer-container feedback__outer-container--contacts container container--stretching container--border-bottom">
+              <div class="feedback__inner-container container container--padding">
+                <fieldset class="feedback__set feedback__set--contacts">
+                  <legend class="feedback__legend feedback__legend--contacts">Контактная информация:</legend>
+                  <label class="feedback__label feedback__label--phone">
+                    <span class="feedback__span feedback__span--contacts feedback__span--phone">Контактный телефон*:</span>
+                    <input class="feedback__input feedback__input--phone" type="tel"  name="phone" placeholder="Введите телефон" required>
                   </label>
-                  <label class="feedback__label feedback__label--lastname" >
-                    <span class="feedback__span feedback__span--lastname">Фамилия*:</span>
-                    <input class="feedback__input feedback__input--lastname" type="text"  name="lastname" placeholder="Иванов">
+                  <label class="feedback__label feedback__label--email" >
+                    <span class="feedback__span feedback__span--contacts feedback__span--email">Электронная почта*:</span>
+                    <input class="feedback__input feedback__input--email" type="email" name="email" placeholder="Введите e-mail" required>
                   </label>
-                  <label class="feedback__label feedback__label--patronymic">
-                    <span class="feedback__span feedback__span--patronymic">Отчество:</span>
-                    <input class="feedback__input feedback__input--patronymic" type="text"  name="patronymic" placeholder="Александрович">
+                </fieldset>
+              </div>
+            </div>
+            <div class="feedback__outer-container feedback__outer-container--impress container container--stretching container--border-bottom">
+              <div class="feedback__inner-container container container--padding">
+                <fieldset class="feedback__set feedback__set--impress">
+                  <legend class="feedback__legend feedback__legend--impress">Ваше общее впечатление:</legend>
+                  <label class="feedback__label feedback__label--radio-checkbox feedback__label--positive">
+                    <input class="feedback__input feedback__input--radio feedback__input--positive visually-hidden" type="radio" name="impress" value="positive" checked>
+                    <div class="feedback__input-custom feedback__input-custom--radio"></div>
+                    <span class="feedback__span feedback__span--radio-checkbox feedback__span--positive">Скорее положительное</span>
                   </label>
+                  <label class="feedback__label feedback__label--radio-checkbox feedback__label--negative" >
+                    <input class="feedback__input feedback__input--radio feedback__input--negative visually-hidden" type="radio" name="impress" value="negative">
+                    <div class="feedback__input-custom feedback__input-custom--radio"></div>
+                    <span class="feedback__span feedback__span--radio-checkbox feedback__span--negative">Скорее отрицательное</span>
+                  </label>
+                  <label class="feedback__label feedback__label--radio-checkbox feedback__label--dontknow" >
+                    <input class="feedback__input feedback__input--radio feedback__input--dontknow visually-hidden" type="radio" name="impress" value="dontknow">
+                    <div class="feedback__input-custom feedback__input-custom--radio"></div>
+                    <span class="feedback__span feedback__span--radio-checkbox feedback__span--dontknow">Затрудняюсь ответить</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="feedback__outer-container feedback__outer-container--attractions container container--stretching container--border-bottom">
+              <div class="feedback__inner-container container container--padding">
+                <fieldset class="feedback__set feedback__set--attractions">
+                  <legend class="feedback__legend feedback__legend--attractions">Посещенные достопримечательности:</legend>
+                  <label class="feedback__label feedback__label--attractions feedback__label--bridge">
+                    <input class="feedback__input feedback__input--checkbox feedback__input--bridge  visually-hidden" type="checkbox" name="attractions" value="Devil's Bridge" checked>
+                    <div class="feedback__input-custom feedback__input-custom--checkbox">
+                      <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                    </div>
+                    <span class="feedback__span feedback__span--radio-checkbox feedback__span--bridge">Мост Дьявола</span>
+                  </label>
+                  <label class="feedback__label feedback__label--attractions feedback__label--mount">
+                    <input class="feedback__input feedback__input--checkbox feedback__input--mount visually-hidden" type="checkbox" name="attractions" value="Mount Bell" checked>
+                    <div class="feedback__input-custom feedback__input-custom--checkbox">
+                      <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                    </div>
+                    <span class="feedback__span feedback__span--radio-checkbox feedback__span--mount">Гора-Колокол</span>
+                  </label>
+                  <label class="feedback__label feedback__label--attractions feedback__label--park">
+                    <input class="feedback__input feedback__input--checkbox feedback__input--park visually-hidden" type="checkbox" name="attractions" value="Slide Park" checked>
+                    <div class="feedback__input-custom feedback__input-custom--checkbox">
+                      <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                    </div>
+                    <span class="feedback__span feedback__span--radio-checkbox feedback__span--park">Слайд-парк</span>
+                  </label>
+                  <label class="feedback__label feedback__label--attractions feedback__label--rocks">
+                    <input class="feedback__input feedback__input--checkbox feedback__input--rocks visually-hidden" type="checkbox" name="attractions" value="Red Rocks">
+                    <div class="feedback__input-custom feedback__input-custom--checkbox">
+                      <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
+                        <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
+                      </svg>
+                    </div>
+                    <span class="feedback__span feedback__span--radio-checkbox feedback__span--rocks">Красные скалы</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="feedback__inner-container feedback__outer-container--emotions container container--padding">
+              <fieldset class="feedback__set feedback__set--emotions">
+                <legend class="feedback__legend feedback__legend--emotions">Опишите свои эмоции:</legend>
+                <textarea class="feedback__textarea feedback__textarea--emotions" name="emotions" placeholder="Опишите подробно все свои восторги" aria-label="Опишите подробно все свои восторги"></textarea>
               </fieldset>
             </div>
-          </div>
-          <div class="container container--stretching container--border-bottom">
-            <div class="container container--padding">
-              <fieldset class="feedback__set feedback__set--contacts">
-                <legend class="feedback__legend feedback__legend--contacts">Контактная информация:</legend>
-                <label class="feedback__label feedback__label--phone">
-                  <span class="feedback__span feedback__span--contacts feedback__span--phone">Контактный телефон*:</span>
-                  <input class="feedback__input feedback__input--phone" type="tel"  name="phone" placeholder="Введите телефон" required>
-                </label>
-                <label class="feedback__label feedback__label--email" >
-                  <span class="feedback__span feedback__span--contacts feedback__span--email">Электронная почта*:</span>
-                  <input class="feedback__input feedback__input--email" type="email" name="email" placeholder="Введите e-mail" required>
-                </label>
-              </fieldset>
+            <div class="feedback__inner-container feedback__outer-container--submit container container--padding">
+              <button class="feedback__button feedback__button--submit button" type="submit">Отправить отзыв</button>
+              <p class="feedback__footnote"><sup>*</sup> — обязательные поля</p>
             </div>
-          </div>
-          <div class="container container--stretching container--border-bottom">
-            <div class="container container--padding">
-              <fieldset class="feedback__set feedback__set--impress">
-                <legend class="feedback__legend feedback__legend--impress">Ваше общее впечатление:</legend>
-                <label class="feedback__label feedback__label--radio-checkbox feedback__label--positive">
-                  <input class="feedback__input feedback__input--radio feedback__input--positive" type="radio" name="impress" value="positive" checked>
-                  <div class="feedback__input-custom feedback__input-custom--radio"></div>
-                  <span class="feedback__span feedback__span--radio-checkbox feedback__span--positive">Скорее положительное</span>
-                </label>
-                <label class="feedback__label feedback__label--radio-checkbox feedback__label--negative" >
-                  <input class="feedback__input feedback__input--radio feedback__input--negative" type="radio" name="impress" value="negative">
-                  <div class="feedback__input-custom feedback__input-custom--radio"></div>
-                  <span class="feedback__span feedback__span--radio-checkbox feedback__span--negative">Скорее отрицательное</span>
-                </label>
-                <label class="feedback__label feedback__label--radio-checkbox feedback__label--dontknow" >
-                  <input class="feedback__input feedback__input--radio feedback__input--dontknow" type="radio" name="impress" value="dontknow">
-                  <div class="feedback__input-custom feedback__input-custom--radio"></div>
-                  <span class="feedback__span feedback__span--radio-checkbox feedback__span--dontknow">Затрудняюсь ответить</span>
-                </label>
-              </fieldset>
-            </div>
-          </div>
-          <div class="container container--stretching container--border-bottom">
-            <div class="container container--padding">
-              <fieldset class="feedback__set feedback__set--attractions">
-                <legend class="feedback__legend feedback__legend--attractions">Посещенные достопримечательности:</legend>
-                <label class="feedback__label feedback__label--attractions feedback__label--bridge">
-                  <input class="feedback__input feedback__input--checkbox feedback__input--bridge" type="checkbox" name="attractions" value="Devil's Bridge" checked>
-                  <div class="feedback__input-custom feedback__input-custom--checkbox">
-                    <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                    </svg>
-                  </div>
-                  <span class="feedback__span feedback__span--radio-checkbox feedback__span--bridge">Мост Дьявола</span>
-                </label>
-                <label class="feedback__label feedback__label--attractions feedback__label--mount">
-                  <input class="feedback__input feedback__input--checkbox feedback__input--mount" type="checkbox" name="attractions" value="Mount Bell" checked>
-                  <div class="feedback__input-custom feedback__input-custom--checkbox">
-                    <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                    </svg>
-                  </div>
-                  <span class="feedback__span feedback__span--radio-checkbox feedback__span--mount">Гора-Колокол</span>
-                </label>
-                <label class="feedback__label feedback__label--attractions feedback__label--park">
-                  <input class="feedback__input feedback__input--checkbox feedback__input--park" type="checkbox" name="attractions" value="Slide Park" checked>
-                  <div class="feedback__input-custom feedback__input-custom--checkbox">
-                    <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                    </svg>
-                  </div>
-                  <span class="feedback__span feedback__span--radio-checkbox feedback__span--park">Слайд-парк</span>
-                </label>
-                <label class="feedback__label feedback__label--attractions feedback__label--rocks">
-                  <input class="feedback__input feedback__input--checkbox feedback__input--rocks" type="checkbox" name="attractions" value="Red Rocks">
-                  <div class="feedback__input-custom feedback__input-custom--checkbox">
-                    <svg class="feedback__tick-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.049px" height="16.249px" viewBox="0 0 23.049 16.249" enable-background="new 0 0 23.049 16.249" xml:space="preserve">
-                      <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"/>
-                    </svg>
-                  </div>
-                  <span class="feedback__span feedback__span--radio-checkbox feedback__span--rocks">Красные скалы</span>
-                </label>
-              </fieldset>
-            </div>
-          </div>
-          <div class="container container--padding">
-            <fieldset class="feedback__set feedback__set--emotions">
-              <legend class="feedback__legend feedback__legend--emotions">Опишите свои эмоции:</legend>
-              <textarea class="feedback__textarea feedback__textarea--emotions" name="emotions" placeholder="Опишите подробно все свои восторги" aria-label="Опишите подробно все свои восторги"></textarea>
-            </fieldset>
-          </div>
-          <div class="container container--padding">
-            <button class="feedback__button feedback__button--submit button" type="submit">Отправить отзыв</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
       <!-- конец красной зоны -->
     </main>
     <footer class="footer">
-      <div class="container container--padding">
-        <p class="footer__title visually-hidden">Контактная информация</p>
+      <p class="footer__title visually-hidden">Контактная информация</p>
+      <div class="footer__container container container--padding">
         <p class="footer__hashtag">#visitsedona</p>
         <ul class="footer__socials socials-bar">
           <li class="socials-bar__item">

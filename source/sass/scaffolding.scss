@@ -34,8 +34,8 @@ a {
 .visually-hidden:not(:focus):not(:active) {
   position: absolute !important;
 
-  width: 1px;
-  height: 1px;
+  width: 1;
+  height: 1;
   overflow: hidden;
 
   white-space: nowrap;
